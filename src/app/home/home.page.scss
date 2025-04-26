@@ -25,3 +25,113 @@
 #container a {
   text-decoration: none;
 }
+
+// Estilos para el banner principal
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-text {
+  z-index: 1;
+  color: #333;
+  max-width: 800px;
+  width: 100%;
+}
+
+.texto-con-fondo {
+  background-color: rgba(128, 128, 128, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+ion-button {
+  --background: #3880ff;
+  --background-hover: #3171e0;
+  --color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+ion-card {
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+ion-card-header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+ion-card-subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+ion-card-content {
+  padding: 1rem;
+}
+
+ion-list {
+  background: transparent;
+}
+
+ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  margin-bottom: 0.5rem;
+}
+
+ion-icon {
+  color: #3880ff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+// Estilos responsivos
+@media (max-width: 768px) {
+  .banner-container {
+    height: 200px;
+  }
+  
+  .banner-text h1 {
+    font-size: 1.4rem;
+  }
+  
+  .banner-text p {
+    font-size: 1rem;
+  }
+}
